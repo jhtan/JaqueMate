@@ -50,14 +50,14 @@ public class ListaMultiple<TDato extends Predecible<TDato>, TIndice extends Pred
 				Perrito.fabricaDePerritos(), Entero.fabricaDeNumeros());
 		x.leer();
 		Scanner input = new Scanner(System.in);
-		System.out.println("Qué lista quieres visualizar?");
+		System.out.println("Quï¿½ lista quieres visualizar?");
 		ListaSimple<Perrito> encontrada = x.encontrarLista(
 				new Entero(input.nextInt()), Entero.porValor());
 		System.out.println(encontrada);
-		System.out.println("y la lista con más datos es...");
+		System.out.println("y la lista con mï¿½s datos es...");
 		System.out.println(x.encontrarListaMasGrande());
 		System.out.println("y la lista con menos datos es...");
-		System.out.println(x.encontrarListaMasPequeña());
+		System.out.println(x.encontrarListaMasPequeÃ±a());
 	}
 
 	public ItemIndexado<ListaSimple<TDato>, TIndice> encontrarListaMasGrande() {
@@ -76,7 +76,7 @@ public class ListaMultiple<TDato extends Predecible<TDato>, TIndice extends Pred
 						});
 	}
 
-	public ItemIndexado<ListaSimple<TDato>, TIndice> encontrarListaMasPequeña() {
+	public ItemIndexado<ListaSimple<TDato>, TIndice> encontrarListaMasPequeÃ±a() {
 		return OpsLectores
 				.cotaInferior(
 						listas.getRecorredor(),
